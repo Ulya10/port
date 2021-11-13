@@ -1,0 +1,110 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    &.active{
+        left: -0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 5;
+        background: rgb(255, 255, 255);
+        opacity: 0.75;
+    }
+
+    &__block {
+        position: relative;
+        width: 345px;
+        background-color: $main-color;
+        height: 100%;
+        padding: 140px 0px 50px 40px;
+      //  left: -100%;
+        transition: all 0.5s;
+        z-index: 6;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        padding-left: 35px;
+        
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        
+        
+    }
+
+    &__link {
+        color: #FFFFFF;
+        text-decoration: none;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            transition: all 0.3s;
+            }
+        &:hover{
+            color: #FFFFFF;
+            text-decoration: none;
+            &::before{
+                background-color:#FFFFFF;
+            }
+        }
+    }
+
+    &__social{
+        margin: 0 auto;
+        width: 90px;
+        position: absolute;
+        bottom: 50px;
+        left:50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    /*
+    &:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+    }
+*/
+}
