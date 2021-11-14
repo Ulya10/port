@@ -4,6 +4,7 @@ const close= document.querySelector('.close');
 const overlay = document.querySelector('.menu__overlay');
 
 /*
+ 
 function menuToggle (item){
     item.addEventListener('click', ()=>{
         menu.classList.toggle('active');
