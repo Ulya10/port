@@ -1,9 +1,10 @@
 const menu = document.querySelector('.menu');
 const hamburger = document.querySelector('.hamburger');
-const close= document.querySelector('.close');
+const close_cross = document.querySelector('.close');
 const overlay = document.querySelector('.menu__overlay');
 
 /*
+ 
 function menuToggle (item){
     item.addEventListener('click', ()=>{
         menu.classList.toggle('active');
@@ -20,7 +21,7 @@ function menuToggle(){
 }
 
 hamburger.addEventListener('click', menuToggle);
-close.addEventListener('click', menuToggle);
+close_cross.addEventListener('click', menuToggle);
 overlay.addEventListener('click', menuToggle);
 
 /*
