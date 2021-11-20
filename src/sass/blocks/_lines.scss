@@ -3,4 +3,7 @@
     height: 3px;
     background-color: $main-color;
     margin: 4px 0 20px 0;
+    &_center{
+        margin: 25px auto 60px auto;
+    }
 }

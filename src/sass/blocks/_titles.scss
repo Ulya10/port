@@ -1,7 +1,7 @@
 .title{
     /*те, которые 24 пикс*/
     font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 60px;
     margin-top: 6px; 
     margin-bottom: 0;
@@ -15,13 +15,21 @@
 }
 
 .subtitle{
+    font-weight: 700;
     margin-top: 0;
     font-size: 16px;
     line-height: 24px;
     padding-left: 10px;
     @include before;
     position: relative; 
-    z-index: 1;   
+    z-index: 1;
+    &_center{
+        padding-left: 0;
+        &:before{
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }   
 }
 
 .tiny-title{
