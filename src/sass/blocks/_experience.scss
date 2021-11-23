@@ -2,7 +2,51 @@
     padding-top: 126px;
     .container{
         width: 986px;
-     text-align: center;   
+        text-align: center;   
     }
-    
+    &__wrapper{
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        margin: 0 auto;
+    }
+
+    &__header{
+        position: relative;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 35px;
+        &::before{
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: -7px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__list{
+        list-style-type: none;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: #000;
+            left: 0;
+            top: -16px;
+        }
+
+    }
+    &__item{
+        padding-left: 35px;
+
+    }
 }
