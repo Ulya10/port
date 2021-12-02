@@ -10,6 +10,10 @@
     padding: 0;
 }
 
+h1, h2, h3, h4{
+    margin-bottom: 0;
+}
+
 .container{
     width: 1140px;
     margin: 0 auto;
@@ -23,3 +27,6 @@
 @import 'blocks/about';
 @import 'blocks/lines';
 @import 'blocks/experience';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';

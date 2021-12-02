@@ -1,10 +1,12 @@
-.experience{
+.experience {
     padding-top: 126px;
-    .container{
+
+    .container {
         width: 986px;
-        text-align: center;   
+        text-align: center;
     }
-    &__wrapper{
+
+    &__wrapper {
         text-align: left;
         display: grid;
         grid-template-columns: repeat(2, 425px);
@@ -12,13 +14,15 @@
         margin: 0 auto;
     }
 
-    &__header{
+    &__header {
         position: relative;
         font-weight: 700;
         font-size: 20px;
         line-height: 30px;
-        padding-left: 35px;
-        &::before{
+        padding-left: 43px;
+        margin-bottom: 0;
+
+        &::before {
             content: '';
             width: 15px;
             height: 15px;
@@ -27,26 +31,94 @@
             display: block;
             position: absolute;
             left: -7px;
-            top:50%;
+            top: 50%;
             transform: translateY(-50%);
         }
     }
-    &__list{
+
+    &__list {
         list-style-type: none;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             width: 1px;
-            height: 100%;
+            height: calc(100% + 8px);
             background-color: #000;
             left: 0;
-            top: -16px;
+            top: -8px;
         }
 
     }
-    &__item{
-        padding-left: 35px;
 
+    &__item {
+        padding-left: 43px;
+        position: relative;
+        &:after{
+            content: '';
+            width: 43px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top:65px;
+            left: 0;
+        }
+
+
+    }
+
+    /*for 1st way
+
+    &__blocktitle{
+        display: flex;
+        margin-top: 45px;
+        &:after{
+            content: '';
+            width: 43px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top:14%;
+            left: 0;
+        }
+    }
+*/
+
+    &__titles {
+        padding-left: 56px;
+        padding-top: 45px;
+    }
+
+    &__blocktitle {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        @include before;
+        padding-top: 14px;
+        padding-left: 17px;
+        top: 45px;
+        left: 0px;
+
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__text {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__titles {
+
+        /*padding-left: 56px;*/
     }
 }

@@ -32,3 +32,14 @@ menu.classList.add('active');
 close.addEventListener('click',()=>{
 menu.classList.remove('active');
 });*/
+
+const percents = document.querySelectorAll('.percent__value');
+const bars = document.querySelectorAll('.percent__progress_orange');
+
+bars.forEach((item,i)=>{
+item.style.width = percents[i].textContent;
+});
+
+percents.forEach((item)=>{
+    console.log(item.textContent);
+    });
