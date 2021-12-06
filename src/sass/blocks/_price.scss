@@ -6,7 +6,8 @@
         text-align: left;
         padding: 0 48px;
         display: grid;
-        grid-template: repeat(3, 44px)/repeat(2, 366px);
+        grid-template: repeat(3, minmax(45px, auto))/repeat(2, 366px);
+        grid-auto-rows: minmax(45px, auto);
         row-gap:15px;
         justify-content: space-between;
     }
@@ -14,7 +15,7 @@
     &__item{
         padding-left: 25px;
         display: grid;
-        grid-template: 21px 18px / 186px 121px;
+        grid-template: repeat(2, minmax(18px auto)) / repeat (2, auto);
         row-gap: 5px;
         justify-content: space-between;
         position: relative;
